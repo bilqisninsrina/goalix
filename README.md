@@ -1,4 +1,4 @@
-## Tugas 6
+## Tugas 7
 1. Widget tree pada Flutter adalah representasi hierarki dari seluruh elemen antarmuka pengguna (UI) dalam aplikasi. Setiap elemen di Flutter merupakan sebuah widget, dan semua widget tersusun dalam bentuk pohon, di mana setiap node memiliki hubungan induk (parent) dan anak (child). Hubungan parent-child ini memungkinkan Flutter membangun UI secara deklaratif, di mana setiap perubahan pada state akan menyebabkan rebuild hanya pada bagian pohon yang terpengaruh.
     - Parent widget berperan sebagai wadah (container) yang dapat mengatur tata letak dan perilaku dari child widget di dalamnya.
     - Child widget menerima konfigurasi dari parent-nya dan menggambar dirinya di layar sesuai instruksi tersebut.
