@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'menu.dart';
+import 'screens/menu.dart';
 
 void main() => runApp(const FootballShopApp());
 
@@ -10,8 +10,18 @@ class FootballShopApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Football Shop',
-      theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF0D47A1),
+          brightness: Brightness.light,
+        ),
+        appBarTheme: const AppBarTheme(centerTitle: true),
+        inputDecorationTheme: const InputDecorationTheme(
+          border: OutlineInputBorder(),
+        ),
+      ),
       home: const MenuPage(),
     );
   }
